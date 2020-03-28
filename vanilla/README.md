@@ -1,21 +1,27 @@
+# 前提
+
+- コンテナに入っていること
+    ```
+    $ docker-compose exec node bash
+    $ cd /docker/vanilla/
+    ```
+
 # パッケージインストール
 
 ```
-$ docker-compose exec node bash
-$ cd /docker/vanilla/
 $ yarn install
 ```
 
 # ビルド
 
 ```
-$ docker-compose exec node /docker/vanilla/node_modules/typescript/bin/tsc
+$ ./node_modules/typescript/bin/tsc
 ```
 
 # 実行
 
 ```
-$ docker-compose exec node node /docker/vanilla/index.js
+$ node ./dist/js/index.js
 ```
 
 # tsconfig
