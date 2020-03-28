@@ -1,0 +1,8 @@
+version: '3'
+services:
+  node:
+    container_name: local_node_vanilla
+    build: ./docker_files/node
+    tty: true
+    volumes:
+      - ./:/docker
